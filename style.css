@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    /* make the calculator in the center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(45deg, #ff8880, #f7cbc8, #f5e7e6);
+}
+
+#calculator {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#displaynumber {
+    width: 80%;
+    margin: 30px;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: right;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    border-radius: 5%;
+}
+
+#keys-calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* repeat(4, 1fr), 4 -> jumlah kolom, fr -> fractional unit */
+    gap: 10px;
+    padding: 25px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(32, 71%, 65%);
+    /* ini untuk pas button hover */
+}
+
+button:active {
+    background-color: hsl(32, 71%, 75%);
+    /* ini untuk pas button diklik */
+}
+
+.operator-btn {
+    background-color: hsl(0, 58%, 45%);
+}
+
+.operator-btn:hover {
+    background-color: hsl(0, 58%, 65%);
+}
+
+.operator-btn:active {
+    background-color: hsl(0, 58%, 75%);
+}
